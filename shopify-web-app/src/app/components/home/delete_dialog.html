@@ -1,0 +1,13 @@
+<div mat-dialog-content>
+    <p style="color: black;
+    font-weight: bold;">Delete Comment:</p>
+    <mat-form-field appearance="fill" class="dialog-input">
+        <input matInput [(ngModel)]="delete_comment" type="textarea">
+    </mat-form-field>
+    <mat-checkbox [(ngModel)]="restorable_delete">Restore in Future(Restorable Delete)</mat-checkbox>
+    <p>Are you sure you want to delete the item?</p>
+</div>
+<div mat-dialog-actions class="action-btns">
+    <button mat-button (click)="onNoClick()" cdkFocusInitial>No</button>
+    <button mat-button (click)="onYesClick()">Yes</button>
+</div>

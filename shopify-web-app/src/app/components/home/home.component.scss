@@ -1,0 +1,94 @@
+.container-div {
+    height: 97vh;
+    padding: 2vh;
+}
+
+.main-div {
+    // background-color: green;
+    height: 100%;
+}
+
+.inventory-card {
+    // height: 92vh;
+}
+
+.operation-div {
+    margin-top: 4vh !important;
+    display: flex;
+}
+
+.search-bar {
+    width: 50% !important;
+}
+
+.checkbox {
+    margin-top: 2px;
+    margin-left: 6px;
+}
+
+::ng-deep .mat-form-field-outline-start {
+    border-radius: 28px 0 0 28px !important;
+    min-width: 28px !important;
+}
+
+::ng-deep .mat-form-field-outline-end {
+    border-radius: 0 28px 28px 0 !important;
+}
+
+table {
+    width: 100%;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+td,
+th {
+    width: 12.5%;
+}
+
+th {
+    font-weight: bold;
+    color: black;
+}
+
+tr.example-detail-row {
+    height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+    background: whitesmoke;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+    background: #efefef;
+}
+
+.example-element-row td {
+    border-bottom-width: 0;
+}
+
+.example-element-detail {
+    overflow: hidden;
+    display: flex;
+}
+
+.input-divs {
+    width: 30%;
+}
+
+.update-error-div {
+    color: red;
+    font-weight: bold;
+}
+
+.dialog-input {
+    width: 100%;
+}
+
+.action-btns {
+    align-items: center;
+    margin: auto;
+}

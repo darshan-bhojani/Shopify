@@ -1,0 +1,59 @@
+<div mat-dialog-content>
+
+    <mat-card class="inventory-card">
+      <mat-card-title>Inventory Item</mat-card-title>
+      <mat-card-content>
+        <div class="row update-error-div" *ngIf="error">
+          {{error_msg}}
+        </div>
+        <div class="row" style="display: flex; margin-top: 3vh;">
+          <div class="col-4 input-divs">
+            <b>Code:</b>
+            <mat-form-field appearance="fill" class="dialog-input">
+              <input matInput [(ngModel)]="item_data.code" type="text">
+            </mat-form-field>
+          </div>
+  
+          <div class="col-4 input-divs">
+            <b>Name:</b>
+            <mat-form-field appearance="fill" class="dialog-input">
+              <input matInput [(ngModel)]="item_data.name" type="text">
+            </mat-form-field>
+          </div>
+          <div class="col-4 input-divs">
+            <b>Category:</b>
+            <mat-form-field appearance="fill" class="dialog-input">
+              <input matInput [(ngModel)]="item_data.category" type="text">
+            </mat-form-field>
+          </div>
+        </div>
+  
+        <div class="row" style="display: flex; margin-top: 3vh;">
+          <div class="col-4 input-divs">
+            <b>Price:</b>
+            <mat-form-field appearance="fill" class="dialog-input">
+              <input matInput [(ngModel)]="item_data.price" type="number">
+            </mat-form-field>
+          </div>
+  
+          <div class="col-4 input-divs">
+            <b>Total:</b>
+            <mat-form-field appearance="fill" class="dialog-input">
+              <input matInput [(ngModel)]="item_data.total_available" type="number">
+            </mat-form-field>
+          </div>
+          <div class="col-4 input-divs">
+            <b>Remaining:</b>
+            <mat-form-field appearance="fill" class="dialog-input">
+              <input matInput [(ngModel)]="item_data.remaining" type="number">
+            </mat-form-field>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onCancelClick()" cdkFocusInitial>Cancel</button>
+    <button mat-button (click)="onAddClick()">Add</button>
+  </div>

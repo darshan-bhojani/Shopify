@@ -1,0 +1,11 @@
+<div mat-dialog-content>
+    <p style="color: black;
+    font-weight: bold;">Delete Reason:</p>
+    <pre style="color: red;">{{data.delete_comment}}</pre>
+
+    <p>Are you sure you want to restore the deleted item?</p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()" cdkFocusInitial>No</button>
+    <button mat-button (click)="onYesClick()">Yes</button>
+</div>
